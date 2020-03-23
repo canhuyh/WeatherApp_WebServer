@@ -1,0 +1,91 @@
+body {
+}
+
+.logo {
+  color: aqua;
+}
+
+main {
+  min-height: 466px;
+}
+
+footer {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  padding: 1px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.not_found {
+  text-align: center;
+  font-size: 5rem;
+}
+
+#loading {
+  margin-top: -4px;
+}
+
+.badge {
+  font-size: 15px;
+  margin: 0px 4px 16px;
+}
+
+.nav-item {
+  padding: 0px 20px 0px;
+}
+
+#input {
+  margin-top: 50px;
+}
+
+h1 {
+  margin-top: 90px;
+}
+
+h5 {
+  text-align: left;
+}
+
+h5 > .badge {
+  font-size: 18px;
+}
+
+footer > p {
+  margin-top: 14px;
+}
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.select {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 25px;
+  line-height: 70px;
+  transition: 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.select:hover {
+  border: 2px solid rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.icon_header {
+  color: white;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.icon_header:hover {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
