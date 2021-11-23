@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  min-height: 466px;
+  height: 100vh;
 }
 
 footer {
@@ -49,6 +49,10 @@ h5 {
 
 h5 > .badge {
   font-size: 18px;
+}
+
+footer {
+  background: #343a40;
 }
 
 footer > p {
