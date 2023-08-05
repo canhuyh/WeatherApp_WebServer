@@ -4,7 +4,6 @@ const tokens =
   "pk.eyJ1IjoibWFnMDAyIiwiYSI6ImNrNjBkN2xlcDA2dXgzZXFudDNoeXNyZm8ifQ.hn6xFl6_BqEmfU8RYV3xug";
 
 function geocoding(keyword, callback) {
-  console.log("Searching....");
   const geocodingUrl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
     keyword
   )}.json?access_token=${tokens}&lang=vi`;
