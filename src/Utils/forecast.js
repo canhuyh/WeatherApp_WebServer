@@ -1,8 +1,7 @@
 const request = require("request");
 
 function forecast(lat, lng, callback) {
-  const url = `https://api.darksky.net/forecast/dbeebaeb5ab6f2b83fefb03bc28f462f/${lat},${lng}?units=si&lang=vi`;
-
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=df7b2bf5d10c452b1a3dc40facd1e5f2&lang=vi&units=metric`;
   request(url, { json: true }, (err, response) => {
     const data = response.body;
     if (err) {
@@ -11,9 +10,10 @@ function forecast(lat, lng, callback) {
     if (data.error) {
       return callback(data.error, undefined);
     }
+
     return callback(undefined, {
-      summary: data.currently.summary,
-      temperature: data.currently.temperature
+      summary: data.weather[0].description,
+      temperature: data.main.temp,
     });
   });
 }
